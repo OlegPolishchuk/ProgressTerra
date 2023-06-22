@@ -139,11 +139,14 @@
 .bonus_title_plug {
   height: 32px;
   width: 150px;
+
+  border-radius: 16px;
 }
 
 .bonus_info_plug {
   height: 24px;
   width: 222px;
+  border-radius: 12px;
 }
 
 .button_next_container_plug {
