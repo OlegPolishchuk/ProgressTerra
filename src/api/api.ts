@@ -30,9 +30,7 @@ export const api = {
     );
   },
 
-  getBonus() {
-    const token = LocalStorageService.getAccessToken();
-
+  getBonus(token: string) {
     return instance.get<GetBonusResponse>(`api/v3/ibonus/generalInfo/${token}`);
   },
 };

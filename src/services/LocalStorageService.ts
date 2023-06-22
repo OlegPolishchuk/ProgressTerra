@@ -1,6 +1,8 @@
 export const LocalStorageService = {
   getAccessToken() {
-    return localStorage.getItem('accessToken') as string;
+    const token = localStorage.getItem('accessToken') || 'null';
+
+    return JSON.parse(token);
   },
 
   setAccessToken(token: string) {
