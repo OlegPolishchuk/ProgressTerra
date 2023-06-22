@@ -1,5 +1,6 @@
 import { ButtonNext } from 'components';
 import { Description } from 'components/BonusCard/Description/Description';
+import { Plug } from 'components/BonusCard/Plug/Plug';
 import { useFetchBonus } from 'hooks';
 import React from 'react';
 
@@ -11,7 +12,7 @@ export const BonusCard = () => {
   }
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Plug />;
   }
 
   return (

@@ -118,3 +118,48 @@
 .bonus_info {
   color: var(--color-form);
 }
+
+.bonus.plug {
+  height: 105px;
+
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.bonus.plug p {
+  background: var(--color-form);
+}
+
+.bonus_description_plug {
+  justify-content: space-between;
+}
+
+.bonus_title_plug {
+  height: 32px;
+  width: 150px;
+}
+
+.bonus_info_plug {
+  height: 24px;
+  width: 222px;
+}
+
+.button_next_container_plug {
+  align-self: center;
+
+  border-radius: 50%;
+  border: 1px solid var(--color-form);
+  width: 35px;
+  height: 35px;
+
+  margin-top: 10px;
+}
+
+
+@keyframes blink {
+  50% {
+    opacity: 0.8;
+  }
+}
