@@ -1,2 +1,3 @@
-export * from 'components/Icons/FireIcon';
-export * from 'components/Icons/InformationButtonIcon';
+export * from './ArrowIcon';
+export * from './FireIcon';
+export * from './InformationButtonIcon';
