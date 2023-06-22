@@ -1,4 +1,3 @@
-import { Data } from 'api/types';
 import { FireIcon } from 'components/Icons';
 import React from 'react';
 import { formatBonusWordEnding, formatDate } from 'utils';

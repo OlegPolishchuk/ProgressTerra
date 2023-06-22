@@ -11,7 +11,7 @@ export const useFetchBonus = () => {
     isError: false,
   });
 
-  const fetchBonuses = async () => {
+  const fetchBonuses = async (): Promise<void> => {
     try {
       const accessToken = LocalStorageService.getAccessToken();
 
@@ -24,10 +24,10 @@ export const useFetchBonus = () => {
       if (res.data.resultOperation.status === 1) {
         await refreshToken();
 
-        await fetchBonuses();
+        return await fetchBonuses();
       }
 
-      const data = res.data.data;
+      const data = await res.data.data;
 
       setData((prevState) => ({
         ...prevState,

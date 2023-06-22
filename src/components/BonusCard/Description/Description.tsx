@@ -7,7 +7,9 @@ interface Props {
   data: Data;
 }
 export const Description = ({ data }: Props) => {
+  console.log('data in Description => ', data);
   const { forBurningQuantity, currentQuantity, dateBurning } = data;
+
   return (
     <div className={'bonus_description'}>
       <Title count={currentQuantity} />
